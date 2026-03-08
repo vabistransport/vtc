@@ -1328,3 +1328,186 @@ img {
         display: flex;
     }
 }
+
+/* ===== СТРАНИЦА ГАЙДОВ ===== */
+.guides-section {
+    padding: 3rem 0 5rem 0;
+}
+
+.guides-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.guides-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+    .guides-header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+.guides-header h1 span {
+    color: var(--vtc-red);
+    background: linear-gradient(135deg, var(--vtc-red) 0%, #ff6b6b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.guides-header p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+/* Сетка гайдов */
+.guides-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .guides-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Карточка гайда */
+.guide-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(118, 40, 40, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.guide-card:hover {
+    border-color: var(--vtc-red);
+    box-shadow: 0 15px 40px -10px rgba(118, 40, 40, 0.4);
+    transform: translateY(-5px);
+}
+
+.guide-card-header {
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.guide-card-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.guide-card-header h2 i {
+    color: var(--vtc-red);
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.guide-card-header p {
+    color: var(--text-gray);
+    font-size: 1rem;
+}
+
+/* Видео контейнер */
+.video-container {
+    position: relative;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    width: 100%;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 соотношение сторон */
+    height: 0;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    border: 2px solid var(--vtc-red);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Примечание для РФ */
+.russia-note {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: rgba(118, 40, 40, 0.2);
+    border-radius: 1rem;
+    border-left: 4px solid var(--vtc-red);
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.russia-note i {
+    color: var(--vtc-red);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.russia-note h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.8rem;
+}
+
+.russia-note p {
+    color: var(--text-gray);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.russia-note .highlight {
+    color: var(--vtc-red);
+    font-weight: 600;
+}
+
+/* Список рекомендаций */
+.tips-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tip-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    border: 1px solid rgba(118, 40, 40, 0.3);
+}
+
+.tip-item i {
+    color: var(--vtc-red);
+    margin-right: 0.3rem;
+}
+
+.tip-item:hover {
+    background-color: rgba(118, 40, 40, 0.3);
+    color: white;
+}
