@@ -46,3 +46,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+//обработчик клика на логотип
+document.addEventListener('DOMContentLoaded', function() {
+    const logo = document.querySelector('.logo');
+    
+    if (logo) {
+        logo.addEventListener('click', function() {
+            //определяем текущий язык по URL
+            const currentPage = window.location.pathname.split('/').pop();
+            
+            if (currentPage.includes('-en')) {
+                //если английская версия, переходим на home-en.html
+                window.location.href = 'home-en.html';
+            } else {
+                //если русская версия или другая, переходим на home.html
+                window.location.href = 'home.html';
+            }
+        });
+    }
+});

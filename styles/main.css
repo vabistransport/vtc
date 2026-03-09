@@ -60,6 +60,20 @@ img {
     display: flex;
     align-items: center;
     gap: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    background-color: rgba(118, 40, 40, 0.2);
+    box-shadow: 0 0 15px rgba(118, 40, 40, 0.3);
+}
+
+.logo:active {
+    transform: scale(0.98);
 }
 
 .logo-img {
@@ -68,6 +82,12 @@ img {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--vtc-red);
+    transition: all 0.3s ease;
+}
+
+.logo:hover .logo-img {
+    border-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .logo-icon {
@@ -88,6 +108,12 @@ img {
     font-size: 1.3rem;
     font-weight: 600;
     color: white;
+    transition: all 0.3s ease;
+}
+
+.logo:hover .logo-text {
+    color: var(--vtc-red);
+    text-shadow: 0 0 8px rgba(118, 40, 40, 0.5);
 }
 
 .nav-links {
@@ -1505,9 +1531,557 @@ img {
 .tip-item i {
     color: var(--vtc-red);
     margin-right: 0.3rem;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    transform: translateY(6px);
 }
 
 .tip-item:hover {
     background-color: rgba(118, 40, 40, 0.3);
     color: white;
+}
+
+.btn-outline i {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+/*transform только для иконок в tip-item */
+.tip-item i {
+    color: var(--vtc-red);
+    margin-right: 0.3rem;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    transform: translateY(6px);
+}
+
+/* для иконки play в кнопке на странице гайдов */
+.btn-outline .fa-play {
+    transform: translateY(6px);
+}
+
+/* Исправление для иконки Discord */
+.recruitment-buttons .btn-outline .fa-discord {
+    transform: translateY(-2px);
+}
+
+/* ===== СТРАНИЦА ГАЛЕРЕИ ===== */
+.gallery-section {
+    padding: 3rem 0 5rem 0;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.gallery-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+    .gallery-header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+.gallery-header h1 span {
+    color: var(--vtc-red);
+    background: linear-gradient(135deg, var(--vtc-red) 0%, #ff6b6b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gallery-header p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+/* Сетка галереи */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Карточка галереи */
+.gallery-item {
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 16 / 9;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    image-rendering: crisp-edges; /* Для четкости */
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    border-color: var(--vtc-red);
+    box-shadow: 0 10px 25px -5px rgba(118, 40, 40, 0.5);
+    z-index: 5;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Оверлей с подписью (по желанию) */
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+/* МОДАЛЬНОЕ ОКНО (LIGHTBOX) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+}
+
+.modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 3px solid var(--vtc-red);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px rgba(118, 40, 40, 0.5);
+}
+
+/* Кнопки навигации */
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(118, 40, 40, 0.5);
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.modal-close:hover {
+    background-color: var(--vtc-red);
+    transform: scale(1.1);
+}
+
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(118, 40, 40, 0.5);
+    transition: all 0.3s ease;
+}
+
+.modal-nav:hover {
+    background-color: var(--vtc-red);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.modal-prev {
+    left: 20px;
+}
+
+.modal-next {
+    right: 20px;
+}
+
+/* Индикатор текущего изображения */
+.modal-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(118, 40, 40, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--vtc-red);
+}
+
+/* Адаптивность для модального окна */
+@media (max-width: 768px) {
+    .modal-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+    }
+    
+    .modal-close {
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+/* ===== СТРАНИЦА НАШ СТИЛЬ ===== */
+.style-section {
+    padding: 3rem 0 5rem 0;
+}
+
+.style-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.style-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+    .style-header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+.style-header h1 span {
+    color: var(--vtc-red);
+    background: linear-gradient(135deg, var(--vtc-red) 0%, #ff6b6b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.style-header p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+/* Сетка для страницы стиля */
+.style-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .style-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
+
+/* Карточка с информацией о покраске */
+.paint-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid rgba(118, 40, 40, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.paint-card h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.paint-card h2 i {
+    color: var(--vtc-red);
+    margin-right: 0.5rem;
+}
+
+.paint-info {
+    background-color: rgba(118, 40, 40, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--vtc-red);
+}
+
+.paint-info-item {
+    display: flex;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.paint-info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.paint-info-label {
+    font-weight: 600;
+    color: var(--vtc-red);
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.paint-info-value {
+    color: var(--text-gray);
+}
+
+/* Цветовые блоки */
+.color-preview {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.color-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 0.5rem;
+}
+
+.color-name {
+    font-weight: 500;
+    color: white;
+    width: 80px;
+}
+
+.color-values {
+    color: var(--text-gray);
+    font-family: monospace;
+    flex: 1;
+}
+
+.color-sample {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin-left: 1rem;
+}
+
+/* Карточка с изображением грузовика */
+.truck-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid rgba(118, 40, 40, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.truck-card h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.truck-card h2 i {
+    color: var(--vtc-red);
+    margin-right: 0.5rem;
+}
+
+/* Контейнер для изображения грузовика */
+.truck-image-container {
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+    aspect-ratio: 16 / 9;
+}
+
+.truck-image-container:hover {
+    transform: scale(1.02);
+    border-color: var(--vtc-red);
+    box-shadow: 0 15px 30px -5px rgba(118, 40, 40, 0.5);
+}
+
+.truck-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.truck-image-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Кнопки для скачивания */
+.download-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    background-color: var(--vtc-red);
+    color: white;
+    flex: 1;
+    min-width: 200px;
+}
+
+.download-btn i {
+    font-size: 1.2rem;
+}
+
+.download-btn:hover {
+    background-color: var(--vtc-red-light);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(118, 40, 40, 0.4);
+}
+
+.download-btn:active {
+    transform: translateY(-1px);
+}
+
+.download-btn.secondary {
+    background-color: transparent;
+    border: 2px solid var(--vtc-red);
+}
+
+.download-btn.secondary:hover {
+    background-color: var(--vtc-red);
+}
+
+/* Секция с дополнительной информацией */
+.style-note {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background-color: rgba(118, 40, 40, 0.1);
+    border-radius: 1rem;
+    border-left: 4px solid var(--vtc-red);
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.style-note i {
+    color: var(--vtc-red);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.style-note p {
+    color: var(--text-gray);
+    font-size: 1rem;
+    line-height: 1.6;
 }

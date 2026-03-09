@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vabis Transport | Галерея</title>
+    
+    <link rel="icon" href="../assets/logo.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="../assets/logo.jpg" alt="Vabis Transport Logo" class="logo-img">
+                    <span class="logo-text">Vabis Transport</span>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="home.html" class="nav-link" id="nav-home">Главная</a></li>
+                    <li><a href="about.html" class="nav-link" id="nav-about">О нас</a></li>
+                    <li><a href="team.html" class="nav-link" id="nav-team">Команда</a></li>
+					<li><a href="gallery.html" class="nav-link active" id="nav-gallery">Галерея</a></li>
+                    <li><a href="guides.html" class="nav-link" id="nav-guides">Гайды</a></li>
+					<li><a href="style.html" class="nav-link" id="nav-style">Наш стиль</a></li>
+                    
+                    <li class="language-selector">
+                        <button class="lang-btn" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </li>
+                </ul>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <section class="gallery-section">
+                <div class="container">
+                    <div class="gallery-header">
+                        <h1>Наша <span>галерея</span></h1>
+                        <p>Лучшие моменты из жизни Vabis Transport</p>
+                    </div>
+                    
+                    <div class="gallery-grid" id="gallery-grid">
+					
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="social-links">
+                    <a href="https://truckersmp.com/vtc/81914" target="_blank" class="social-link" title="TruckersMP">
+                        <i class="fas fa-truck"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@ariphe_club?_t=ZS-8yamp27H56a&_r=1" target="_blank" class="social-link" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://discord.gg/vabistransport" target="_blank" class="social-link" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://t.me/+9iaCWgDe1Fo4NzU6" target="_blank" class="social-link" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Vabis Transport. Все права защищены.</p>
+                </div>
+                
+                <div class="developer-credit">
+                    <p>
+                        Разработано 
+                        <a href="https://github.com/GitPolyakoff" target="_blank">Polyakoff</a>
+                        с <i class="fas fa-heart"></i> к Vabis Transport
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal" id="gallery-modal">
+        <button class="modal-close" id="modal-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="modal-nav modal-prev" id="modal-prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="modal-nav modal-next" id="modal-next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="modal-content">
+            <img src="" alt="Gallery Image" class="modal-image" id="modal-image">
+        </div>
+        <div class="modal-counter" id="modal-counter"></div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/language.js"></script>
+    <script src="../scripts/gallery.js"></script>
+</body>
+</html>
