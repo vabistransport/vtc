@@ -310,7 +310,7 @@ img {
 
 /* ===== СЕКЦИЯ ПАРТНЕРОВ ===== */
 .partners-section {
-    background-color: var(--vtc-dark-blue);
+    background: linear-gradient(135deg, rgba(41, 53, 79, 0.9) 0%, rgba(118, 40, 40, 0.2) 100%);
     padding: 3rem 0;
     margin: 0;
 }
@@ -460,10 +460,14 @@ img {
 .footer-link {
     color: var(--text-gray);
     transition: color 0.2s;
+    font-weight: 600;
 }
 
 .footer-link:hover {
     color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--vtc-red);
+    text-underline-offset: 4px;
 }
 
 .social-links {
@@ -488,6 +492,7 @@ img {
     color: var(--text-gray);
     font-size: 0.85rem;
     margin-bottom: 0.5rem;
+    font-weight: 400;
 }
 
 .developer-credit {
@@ -496,13 +501,13 @@ img {
     font-size: 0.85rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .developer-credit a {
     color: var(--vtc-red);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
@@ -516,6 +521,23 @@ img {
     color: var(--vtc-red);
     font-size: 0.8rem;
     margin: 0 2px;
+    animation: heartBeat 1.5s ease infinite;
+}
+
+/* Анимация сердечка */
+@keyframes heartBeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.05);
+    }
 }
 
 /* ===== СТРАНИЦА О НАС ===== */
@@ -2086,4 +2108,207 @@ img {
     color: var(--text-gray);
     font-size: 1rem;
     line-height: 1.6;
+}
+
+/* ===== СТРАНИЦЫ ПОЛИТИКИ (PRIVACY & TERMS) ===== */
+.policy-section {
+    padding: 3rem 0 5rem 0;
+}
+
+.policy-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.policy-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+    .policy-header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+.policy-header h1 span {
+    color: var(--vtc-red);
+    background: linear-gradient(135deg, var(--vtc-red) 0%, #ff6b6b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.policy-header p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+/* Контейнер для контента политики */
+.policy-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    border: 1px solid rgba(118, 40, 40, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Заголовки внутри документа */
+.policy-container h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    margin: 2rem 0 1rem 0;
+    border-bottom: 2px solid var(--vtc-red);
+    padding-bottom: 0.5rem;
+}
+
+.policy-container h2:first-of-type {
+    margin-top: 0;
+}
+
+.policy-container h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+.policy-container h3 i {
+    color: var(--vtc-red);
+    margin-right: 0.5rem;
+}
+
+.policy-container p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.policy-container strong {
+    color: white;
+    font-weight: 600;
+}
+
+.policy-container em {
+    color: var(--vtc-red);
+    font-style: italic;
+}
+
+/* Списки в политике */
+.policy-container ul, 
+.policy-container ol {
+    margin: 1rem 0 1.5rem 2rem;
+    color: var(--text-gray);
+}
+
+.policy-container li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.policy-container li::marker {
+    color: var(--vtc-red);
+}
+
+/* Блок с датой */
+.policy-date {
+    display: inline-block;
+    background-color: rgba(118, 40, 40, 0.2);
+    border: 1px solid var(--vtc-red);
+    border-radius: 2rem;
+    padding: 0.3rem 1.5rem;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.policy-date i {
+    color: var(--vtc-red);
+    margin-right: 0.3rem;
+}
+
+/* Выделенные блоки */
+.policy-highlight {
+    background-color: rgba(118, 40, 40, 0.1);
+    border-left: 4px solid var(--vtc-red);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.policy-highlight p:last-child {
+    margin-bottom: 0;
+}
+
+.policy-highlight i {
+    color: var(--vtc-red);
+    margin-right: 0.5rem;
+}
+
+/* Контактная информация */
+.policy-contact {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(118, 40, 40, 0.3);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.policy-contact p {
+    margin-bottom: 0.5rem;
+}
+
+.policy-contact a {
+    color: var(--vtc-red);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.policy-contact a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Навигация между политиками */
+.policy-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.policy-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 2px solid var(--vtc-red);
+    color: white;
+}
+
+.policy-nav a i {
+    color: var(--vtc-red);
+    transition: all 0.3s ease;
+}
+
+.policy-nav a:hover {
+    background-color: var(--vtc-red);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(118, 40, 40, 0.4);
+}
+
+.policy-nav a:hover i {
+    color: white;
 }
