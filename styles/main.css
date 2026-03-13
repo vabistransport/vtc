@@ -2312,3 +2312,376 @@ img {
 .policy-nav a:hover i {
     color: white;
 }
+
+/* ===== МОБИЛЬНЫЕ УЛУЧШЕНИЯ ДЛЯ СТРАНИЦ ПОЛИТИКИ ===== */
+@media (max-width: 768px) {
+    /* Контейнер политики */
+    .policy-container {
+        padding: 1.5rem;
+    }
+    
+    /* Заголовки */
+    .policy-container h2 {
+        font-size: 1.5rem;
+        word-wrap: break-word;
+    }
+    
+    .policy-container h3 {
+        font-size: 1.2rem;
+        word-wrap: break-word;
+    }
+    
+    /* Текст и списки */
+    .policy-container p,
+    .policy-container li {
+        font-size: 0.95rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    /* Выделенные блоки */
+    .policy-highlight {
+        padding: 1rem;
+        overflow-x: hidden;
+    }
+    
+    .policy-highlight p {
+        margin-left: 0 !important;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+    
+    .policy-highlight strong {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    
+    /* Длинные ссылки и email */
+    .policy-highlight a,
+    .policy-contact a {
+        word-break: break-all;
+        white-space: normal;
+        display: inline-block;
+        max-width: 100%;
+    }
+    
+    /* Блок с общей информацией */
+    .policy-highlight p:first-child {
+        margin-bottom: 0.3rem;
+    }
+    
+    .policy-highlight p:last-child {
+        margin-left: 0 !important;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    
+    .policy-highlight p:last-child strong {
+        display: inline-block;
+        margin-right: 0.3rem;
+    }
+    
+    /* Контактная информация */
+    .policy-contact {
+        padding: 1rem;
+        text-align: left;
+    }
+    
+    .policy-contact p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+        margin-bottom: 1rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .policy-contact p i {
+        margin-bottom: 0.2rem;
+    }
+    
+    .policy-contact p strong {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    
+    .policy-contact p a {
+        word-break: break-all;
+        white-space: normal;
+        width: 100%;
+    }
+    
+    /* Навигационные кнопки */
+    .policy-nav {
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 100%;
+    }
+    
+    .policy-nav a {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    
+    .policy-nav a i {
+        flex-shrink: 0;
+    }
+    
+    /* Блок с датой */
+    .policy-date {
+        font-size: 0.8rem;
+        padding: 0.3rem 1rem;
+        text-align: center;
+        width: 100%;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    
+   /* ===== ИСПРАВЛЕНИЯ ДЛЯ НАВБАРА НА МОБИЛЬНЫХ ===== */
+@media (max-width: 768px) {
+    /* Возвращаем исходное поведение навбара */
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px; /* Возвращаем фиксированную высоту */
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.3rem;
+    }
+    
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo-text {
+        font-size: 1.1rem;
+        white-space: nowrap; /* Запрещаем перенос текста */
+        max-width: 150px;
+        overflow: hidden;
+        text-overflow: ellipsis; /* Добавляем многоточие, если текст не влезает */
+    }
+    
+    .mobile-menu-btn {
+        display: block; /* Кнопка меню должна быть видна */
+        margin-left: auto; /* Прижимаем к правому краю */
+    }
+    
+    .nav-links {
+        top: 70px;
+    }
+    
+    .language-selector {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    .policy-container {
+        padding: 1rem;
+    }
+    
+    .policy-container h2 {
+        font-size: 1.3rem;
+    }
+    
+    .policy-container h3 {
+        font-size: 1.1rem;
+    }
+    
+    .policy-highlight p {
+        font-size: 0.9rem;
+    }
+    
+    .policy-contact p {
+        font-size: 0.9rem;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+        max-width: 120px;
+    }
+    
+    .logo-img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* ===== УЛУЧШЕНИЯ ДЛЯ ПЕРЕНОСА ТЕКСТА НА СТРАНИЦАХ ПОЛИТИКИ ===== */
+/* Перенос длинных слов в заголовках */
+.policy-header h1,
+.policy-header h1 span {
+    word-break: break-word;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Для слова "конфиденциальности" и других длинных слов */
+.policy-header h1 span {
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-all;
+    hyphens: auto;
+    line-height: 1.3;
+}
+
+/* Улучшения для блока с общей информацией */
+.policy-highlight p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3rem 0.5rem;
+}
+
+.policy-highlight p i {
+    flex-shrink: 0;
+}
+
+.policy-highlight p strong {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.policy-highlight p span {
+    color: var(--text-gray);
+    white-space: nowrap;
+}
+
+/* Стили для email - чтобы он всегда был на отдельной строке на десктопе */
+.policy-highlight p a {
+    word-break: break-all;
+    margin-left: 0;
+    display: inline-block;
+}
+
+/* Десктоп версия - email на отдельной строке */
+@media (min-width: 769px) {
+    .policy-highlight p {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    
+    /* Заголовок "Общая информация" и первый span в одной строке */
+    .policy-highlight p strong:first-of-type {
+        margin-right: 0.3rem;
+    }
+    
+    .policy-highlight p span {
+        margin-right: 0.3rem;
+    }
+    
+    /* Принудительно переносим "Контактный email" и саму почту на новую строку */
+    .policy-highlight p strong:last-of-type {
+        display: block;
+        width: 100%;
+        margin-top: 0.3rem;
+        white-space: normal;
+    }
+    
+    .policy-highlight p a {
+        display: inline-block;
+        margin-left: 0.3rem;
+        white-space: nowrap;
+        max-width: calc(100% - 120px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+    }
+    
+    /* Убираем лишний перенос, если места достаточно */
+    .policy-highlight p a:hover {
+        overflow: visible;
+        text-overflow: clip;
+        white-space: normal;
+        word-break: break-all;
+    }
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    .policy-highlight p {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .policy-highlight p i {
+        margin-bottom: 0.2rem;
+    }
+    
+    .policy-highlight p strong,
+    .policy-highlight p span {
+        white-space: normal;
+        width: 100%;
+    }
+    
+    .policy-highlight p a {
+        width: 100%;
+        word-break: break-all;
+    }
+    
+    /* Специально для длинных слов в заголовке */
+    .policy-header h1 {
+        font-size: 2rem;
+        word-break: break-all;
+        hyphens: auto;
+        line-height: 1.2;
+    }
+    
+    .policy-header h1 span {
+        font-size: inherit;
+        word-break: break-all;
+        display: inline;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    .policy-header h1 {
+        font-size: 1.8rem;
+    }
+}
+}
+
+/* ИСПРАВЛЕНИЕ ДЛЯ КОНТАКТОВ */
+@media (max-width: 768px) {
+    .policy-contact p {
+        display: block !important;
+    }
+    
+    .policy-contact p i {
+        float: left !important;
+        margin-right: 0.5rem !important;
+        margin-top: 0.2rem !important;
+    }
+    
+    .policy-contact p strong {
+        display: block !important;
+        margin-left: 2rem !important;
+        margin-bottom: 0.2rem !important;
+    }
+    
+    .policy-contact p a {
+        display: block !important;
+        margin-left: 2rem !important;
+        word-break: break-all !important;
+    }
+}

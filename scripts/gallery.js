@@ -1,172 +1,172 @@
 // Данные галереи (массив объектов с изображениями)
 const galleryImages = [
     {
-        src: "../assets/gallery/convoy2.png",
-        thumbnail: "../assets/gallery/thumb/convoy2.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup1.jpg",
+        thumbnail: "../assets/gallery/meetup1.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy3.png",
-        thumbnail: "../assets/gallery/thumb/convoy3.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup2.jpg",
+        thumbnail: "../assets/gallery/meetup2.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy4.png",
-        thumbnail: "../assets/gallery/thumb/convoy4.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup3.jpg",
+        thumbnail: "../assets/gallery/meetup3.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy5.png",
-        thumbnail: "../assets/gallery/thumb/convoy5.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup4.jpg",
+        thumbnail: "../assets/gallery/meetup4.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy6.png",
-        thumbnail: "../assets/gallery/thumb/convoy6.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup5.jpg",
+        thumbnail: "../assets/gallery/meetup5.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy7.png",
-        thumbnail: "../assets/gallery/thumb/convoy7.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup6.jpg",
+        thumbnail: "../assets/gallery/meetup6.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy8.png",
-        thumbnail: "../assets/gallery/thumb/convoy8.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup7.jpg",
+        thumbnail: "../assets/gallery/meetup7.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy9.png",
-        thumbnail: "../assets/gallery/thumb/convoy9.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
-    },
-	{
-        src: "../assets/gallery/convoy10.png",
-        thumbnail: "../assets/gallery/thumb/convoy10.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup8.jpg",
+        thumbnail: "../assets/gallery/meetup8.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy11.png",
-        thumbnail: "../assets/gallery/thumb/convoy11.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup9.jpg",
+        thumbnail: "../assets/gallery/meetup9.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy12.png",
-        thumbnail: "../assets/gallery/thumb/convoy12.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup10.jpg",
+        thumbnail: "../assets/gallery/meetup10.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy13.png",
-        thumbnail: "../assets/gallery/thumb/convoy13.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
-    },
-	{
-        src: "../assets/gallery/convoy14.png",
-        thumbnail: "../assets/gallery/thumb/convoy14.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup11.jpg",
+        thumbnail: "../assets/gallery/meetup11.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy15.png",
-        thumbnail: "../assets/gallery/thumb/convoy15.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup12.jpg",
+        thumbnail: "../assets/gallery/meetup12.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy16.png",
-        thumbnail: "../assets/gallery/thumb/convoy16.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup13.jpg",
+        thumbnail: "../assets/gallery/meetup13.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy17.png",
-        thumbnail: "../assets/gallery/thumb/convoy17.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
-    },
-			    {
-        src: "../assets/gallery/convoy18.png",
-        thumbnail: "../assets/gallery/thumb/convoy18.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup14.jpg",
+        thumbnail: "../assets/gallery/meetup14.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy19.png",
-        thumbnail: "../assets/gallery/thumb/convoy19.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup15.jpg",
+        thumbnail: "../assets/gallery/meetup15.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy20.png",
-        thumbnail: "../assets/gallery/thumb/convoy20.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup16.jpg",
+        thumbnail: "../assets/gallery/meetup16.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy21.png",
-        thumbnail: "../assets/gallery/thumb/convoy21.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
-    },
-			    {
-        src: "../assets/gallery/convoy22.png",
-        thumbnail: "../assets/gallery/thumb/convoy22.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup17.jpg",
+        thumbnail: "../assets/gallery/meetup17.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy23.png",
-        thumbnail: "../assets/gallery/thumb/convoy23.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup18.jpg",
+        thumbnail: "../assets/gallery/meetup18.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy24.png",
-        thumbnail: "../assets/gallery/thumb/convoy24.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup19.jpg",
+        thumbnail: "../assets/gallery/meetup19.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     },
     {
-        src: "../assets/gallery/convoy25.png",
-        thumbnail: "../assets/gallery/thumb/convoy25.png",
-        caption: "Конвой Vabis Transport | Vabis Transport Convoy",
-        captionRu: "Конвой Vabis Transport",
-        captionEn: "Vabis Transport Convoy"
+        src: "../assets/gallery/meetup20.jpg",
+        thumbnail: "../assets/gallery/meetup20.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
+    },
+    {
+        src: "../assets/gallery/meetup21.jpg",
+        thumbnail: "../assets/gallery/meetup21.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
+    },
+    {
+        src: "../assets/gallery/meetup22.jpg",
+        thumbnail: "../assets/gallery/meetup22.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
+    },
+    {
+        src: "../assets/gallery/meetup23.jpg",
+        thumbnail: "../assets/gallery/meetup23.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
+    },
+    {
+        src: "../assets/gallery/meetup24.jpg",
+        thumbnail: "../assets/gallery/meetup24.jpg",
+        caption: "Встреча Vabis Transport | Vabis Transport Meeting",
+        captionRu: "Встреча Vabis Transport",
+        captionEn: "Vabis Transport Meeting"
     }
 ];
 
