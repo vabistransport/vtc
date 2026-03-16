@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vabis Transport | Страница не найдена (404)</title>
+    
+    <meta name="description" content="Страница не найдена. Вероятно, вы перешли по несуществующей ссылке. Вернитесь на главную или воспользуйтесь навигацией.">
+    <meta name="robots" content="noindex, follow">
+    
+    <meta property="og:title" content="Vabis Transport | Страница не найдена">
+    <meta property="og:description" content="Заблудились? Не беда! Вернитесь на главную и продолжите путь с нами.">
+    <meta property="og:image" content="https://vabistransport.github.io/vtc/assets/logo.jpg">
+    <meta property="og:url" content="https://vabistransport.github.io/vtc/404.html">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="assets/logo.jpg" type="image/png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <style>
+        .error-section {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 0;
+        }
+        
+        .error-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            border-radius: 1rem;
+            padding: 3rem 2rem;
+            border: 1px solid rgba(118, 40, 40, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--vtc-red);
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 30px rgba(118, 40, 40, 0.5);
+            opacity: 0.8;
+        }
+        
+        .error-icon {
+            font-size: 5rem;
+            color: var(--vtc-red);
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .error-message {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .error-divider {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--vtc-red), transparent);
+            margin: 2rem auto;
+        }
+        
+        .error-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .error-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            background-color: transparent;
+            border: 2px solid var(--vtc-red);
+            color: white;
+        }
+        
+        .error-link i {
+            color: var(--vtc-red);
+            transition: all 0.3s ease;
+        }
+        
+        .error-link:hover {
+            background-color: var(--vtc-red);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(118, 40, 40, 0.4);
+        }
+        
+        .error-link:hover i {
+            color: white;
+        }
+        
+        .error-quote {
+            font-style: italic;
+            color: var(--text-gray);
+            margin-top: 2rem;
+            padding: 1rem;
+            border-top: 1px solid rgba(118, 40, 40, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 1.5rem;
+            }
+            
+            .error-container {
+                padding: 2rem 1rem;
+            }
+            
+            .error-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .error-link {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/logo.jpg" alt="Vabis Transport Logo" class="logo-img">
+                    <span class="logo-text">Vabis Transport</span>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="pages/home.html" class="nav-link" id="nav-home">Главная</a></li>
+                    <li><a href="pages/about.html" class="nav-link" id="nav-about">О нас</a></li>
+                    <li><a href="pages/team.html" class="nav-link" id="nav-team">Команда</a></li>
+                    <li><a href="pages/gallery.html" class="nav-link" id="nav-gallery">Галерея</a></li>
+                    <li><a href="pages/guides.html" class="nav-link" id="nav-guides">Гайды</a></li>
+                    <li><a href="pages/style.html" class="nav-link" id="nav-style">Наш стиль</a></li>
+                    
+                    <li class="language-selector">
+                        <button class="lang-btn" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </li>
+                </ul>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <section class="error-section">
+                <div class="container">
+                    <div class="error-container">
+                        <div class="error-code">404</div>
+                        
+                        <i class="fas fa-map-signals error-icon"></i>
+                        
+                        <h1 class="error-title">Похоже, вы заблудились</h1>
+                        
+                        <p class="error-message">
+                            Эта страница не найдена на карте наших маршрутов.<br>
+                            Возможно, ссылка устарела или была перемещена.
+                        </p>
+                        
+                        <div class="error-divider"></div>
+                        
+                        <p style="color: var(--text-gray); margin-bottom: 1rem;">
+                            Но не беда! Даже лучшие водители иногда сбиваются с пути.
+                        </p>
+                        
+                        <div class="error-links">
+                            <a href="pages/home.html" class="error-link">
+                                <i class="fas fa-home"></i> На главную
+                            </a>
+                            <a href="pages/about.html" class="error-link">
+                                <i class="fas fa-info-circle"></i> О компании
+                            </a>
+                            <a href="https://discord.gg/vabistransport" target="_blank" class="error-link">
+                                <i class="fab fa-discord"></i> Discord
+                            </a>
+                        </div>
+                        
+                        <div class="error-quote">
+                            <i class="fas fa-quote-left" style="color: var(--vtc-red); margin-right: 0.5rem;"></i>
+                            Дорогу осилит идущий, а нужную страницу найдет кликающий
+                            <i class="fas fa-quote-right" style="color: var(--vtc-red); margin-left: 0.5rem;"></i>
+                        </div>
+                        
+                        <p style="color: var(--text-gray); font-size: 0.9rem; margin-top: 2rem;">
+                            Если вы уверены, что здесь должна быть страница, сообщите нам в Discord
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer-nav">
+                    <a href="pages/privacy.html" class="footer-link">Политика конфиденциальности</a>
+                    <a href="pages/terms.html" class="footer-link">Условия использования</a>
+                </nav>
+                
+                <div class="social-links">
+                    <a href="https://truckersmp.com/vtc/81914" target="_blank" class="social-link" title="TruckersMP">
+                        <i class="fas fa-truck"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@ariphe_club" target="_blank" class="social-link" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://discord.gg/vabistransport" target="_blank" class="social-link" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://t.me/+9iaCWgDe1Fo4NzU6" target="_blank" class="social-link" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Vabis Transport. Все права защищены.</p>
+                </div>
+                
+                <div class="developer-credit">
+                    <p>Разработано <a href="https://github.com/GitPolyakoff" target="_blank">Polyakoff</a> с <i class="fas fa-heart"></i> к Vabis Transport</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
