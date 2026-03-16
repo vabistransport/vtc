@@ -49,6 +49,12 @@
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>https://vabistransport.github.io/vtc/404.html</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
     
     <!-- Английские версии -->
     <url>
