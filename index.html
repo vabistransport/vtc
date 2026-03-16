@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vabis Transport</title>
-    <meta http-equiv="refresh" content="0; url=pages/home.html">
-	<link rel="icon" href="../assets/logo.jpg" type="image/png">
+    <title>Vabis Transport - Виртуальная Транспортная Компания в TruckersMP</title>
+    
+    <meta name="description" content="Vabis Transport - виртуальная транспортная компания в TruckersMP. Дружный коллектив, регулярные конвои, система рангов, собственная покраска и Discord бот. Присоединяйся!">
+    <meta name="keywords" content="Vabis Transport, Вабис Транспорт, VTC, TruckersMP, виртуальная транспортная компания, конвои, Euro Truck Simulator 2, ETS2">
+    <meta name="author" content="Vabis Transport">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Vabis Transport - Ваша стильная VTC в TruckersMP">
+    <meta property="og:description" content="Присоединяйтесь к дружной команде Vabis Transport! Конвои, система рангов, свой Discord бот и уникальный стиль.">
+    <meta property="og:image" content="https://vabistransport.github.io/vtc/assets/logo.jpg">
+    <meta property="og:url" content="https://vabistransport.github.io/vtc/">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="assets/logo.jpg" type="image/png">
+    
+    <link rel="alternate" hreflang="ru" href="https://vabistransport.github.io/vtc/pages/home.html">
+    <link rel="alternate" hreflang="en" href="https://vabistransport.github.io/vtc/pages/home-en.html">
+    <link rel="alternate" hreflang="x-default" href="https://vabistransport.github.io/vtc/pages/home.html">
 </head>
 <body>
-    <p>Перенаправление на главную страницу...</p>
-    <a href="pages/home.html">Нажмите сюда, если перенаправление не сработало</a>
+    <p>Определение языка... Перенаправление на главную страницу...</p>
+    
+    <script>
+        (function() {
+            const savedLang = localStorage.getItem('vtc-language');
+            
+            if (savedLang) {
+                if (savedLang === 'en') {
+                    window.location.href = 'pages/home-en.html';
+                } else {
+                    window.location.href = 'pages/home.html';
+                }
+                return;
+            }
+            
+            const browserLang = navigator.language || navigator.userLanguage;
+            
+            if (browserLang && browserLang.startsWith('en')) {
+                window.location.href = 'pages/home-en.html';
+            } else {
+                window.location.href = 'pages/home.html';
+            }
+        })();
+    </script>
+    
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=pages/home.html">
+    </noscript>
+    
+    <div style="display: none;">
+        <a href="pages/home.html">Русская версия</a>
+        <a href="pages/home-en.html">English version</a>
+    </div>
 </body>
 </html>

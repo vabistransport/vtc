@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vabistransport.github.io/vtc/sitemap.xml
