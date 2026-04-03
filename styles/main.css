@@ -1147,7 +1147,7 @@ img {
     border: 1px solid var(--vtc-red);
 }
 
-/* Сетка для трех категорий */
+/* Сетка для четырех категорий */
 .results-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -1155,9 +1155,17 @@ img {
     margin-bottom: 2rem;
 }
 
+/* Для планшетов (по 2 в ряд) */
 @media (min-width: 768px) {
     .results-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Для больших экранов/ПК (по 4 в ряд) */
+@media (min-width: 1024px) {
+    .results-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -1287,18 +1295,25 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 0; /* Критически важно: позволяет дочерним элементам обрезать текст */
+    gap: 0.5rem; /* Небольшой отступ между ником и пробегом */
 }
 
 .driver-name {
     color: white;
     font-weight: 500;
     font-size: 0.95rem;
+    white-space: nowrap; /* Запрещаем нику переноситься на новую строку */
+    overflow: hidden; /* Скрываем текст, который не влез */
+    text-overflow: ellipsis; /* Добавляем троеточие (...) в конце длинного ника */
 }
 
 .driver-distance {
     color: var(--vtc-red);
     font-weight: 600;
     font-size: 0.9rem;
+    white-space: nowrap; /* Строго запрещаем перенос пробега на новые строки */
+    flex-shrink: 0; /* Запрещаем сжимать блок пробега, отдавая приоритет сжатию ника */
 }
 
 /* Топ водитель (особый стиль) */
